@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    val recorder = AudioRecord.Builder()
+    .setAudioSource(MediaRecorder.AudioSource.MIC)
+    .setAudioFormat(AudioFormat.Builder()
+    .setEncoding(AudioFormat.ENCODING_PCM_16BIT)
+    .setSampleRate(32000)
+    .setChannelMask(channelMask)
+    .build())
+    .setBufferSizeInBytes(2 * minBuffSizeBytes)
+    .build()
+</resources>
