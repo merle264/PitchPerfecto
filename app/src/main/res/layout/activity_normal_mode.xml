@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!--XML code for activity_main.xml-->
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -9,46 +7,58 @@
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:background="@drawable/gradient_background"
-    tools:context=".MainActivity">
+    tools:context=".NormalModeActivity">
 
-    <!--Heading Text View-->
+    <!-- Starry Background View -->
+    <com.example.karaoke.StarryBackgroundView
+        android:id="@+id/starryBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+
+    <!-- Heading Text View -->
     <TextView
         android:id="@+id/txthead"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="@string/audio_recorder"
+        android:text="Song Title"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:layout_marginTop="20dp"/>
 
-    <!--This will display the status of our app when
-        we will record some audio and play that audio-->
+    <!-- Lyrics Display TextView -->
     <TextView
-        android:id="@+id/idTVstatus"
+        android:id="@+id/lyricTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        android:text="@string/status"
+        android:text="Lyrics will appear here"
         android:textAlignment="center"
-        android:textSize="18sp" />
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
 
-    <!--Linear Layout for adding textviews
-        in horizontal manner-->
+    <!-- Linear Layout for Buttons -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:layout_marginTop="30dp"
         android:orientation="horizontal"
-        android:weightSum="4">
+        android:weightSum="4"> <!-- Increased weightSum to accommodate the new button -->
 
-        <!--Textview to start audio recording
-            drawableTop will add above mic image-->
-        <TextView
+        <!-- Record Button -->
+        <Button
             android:id="@+id/btnRecord"
             android:layout_width="0dp"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
             android:background="@color/purple_500"
@@ -57,9 +67,8 @@
             android:textAlignment="center"
             android:textColor="@color/white" />
 
-        <!--Textview to stop audio recording
-            drawableTop will add above mic image-->
-        <TextView
+        <!-- Stop Recording Button -->
+        <Button
             android:id="@+id/btnStop"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -71,23 +80,8 @@
             android:textAlignment="center"
             android:textColor="@color/white" />
 
-        <!--Textview to play audio that is recorded
-            drawableTop will add above mic image-->
-        <TextView
-            android:id="@+id/btnPlay"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:background="@color/purple_500"
-            android:padding="5dp"
-            android:text="@string/play_recording"
-            android:textAlignment="center"
-            android:textColor="@color/white" />
-
-        <!--Textview to pause the play of audio recording
-            drawableTop will add above mic image-->
-        <TextView
+        <!-- Stop Playing Button -->
+        <Button
             android:id="@+id/btnStopPlay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -99,5 +93,19 @@
             android:textAlignment="center"
             android:textColor="@color/white" />
 
+        <!-- Button to switch back to Recording mode -->
+        <Button
+            android:id="@+id/btnSwitchMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/purple_500"
+            android:padding="5dp"
+            android:text="hard"
+            android:textColor="@color/white" />
+
+
     </LinearLayout>
+
 </RelativeLayout>

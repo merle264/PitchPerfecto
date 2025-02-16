@@ -1,4 +1,4 @@
-package com.example.karaoke.ui.theme
+package com.example.karaokeapp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

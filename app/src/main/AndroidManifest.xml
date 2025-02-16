@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- Permission for recording audio and storage of audio in users device -->
+
+    <!-- Permission for recording audio in user's device -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -13,7 +15,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Karaoke"
-        tools:targetApi="31">
+        tools:targetApi="31"
+        android:allowAudioPlaybackCapture="false"
+        android:largeHeap="true">
+
+        <!-- Activity declarations -->
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -23,12 +29,54 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".MainActivity"
+            android:name=".SongListActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.Karaoke">
         </activity>
+
+        <activity
+            android:name=".NormalModeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Karaoke">
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Karaoke">
+        </activity>
+
+        <activity
+            android:name=".LicensesActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Karaoke">
+        </activity>
+
+        <activity
+            android:name=".StarRatingActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Karaoke">
+        </activity>
+
+        <activity
+            android:name=".HardModeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Karaoke">
+        </activity>
+
+        <!-- FileProvider declaration -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
     </application>
 
 </manifest>

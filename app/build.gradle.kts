@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.example.karaoke"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.karaoke"
@@ -40,7 +40,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -54,6 +53,12 @@ dependencies {
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     implementation(libs.firebase.vertexai)
+    // Add your local JAR files directly here
+    implementation(files("libs/jlibrosa-1.1.8-SNAPSHOT.jar", "libs/TarsosDSP-Android-latest.jar"))
+    implementation("org.apache.commons:commons-math3:3.6.1")
+    implementation ("com.github.squti:Android-Wave-Recorder:2.0.1")
+    implementation(libs.androidx.media3.common.ktx)
+    implementation(libs.androidx.preference)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
