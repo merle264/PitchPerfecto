@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Background layer: Blue color -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#E1BEE7" /> <!-- Blue background color -->
+        </shape>
+    </item>
+
+    <!-- Foreground layer: Double music note icon -->
+    <item
+        android:gravity="center">
+        <vector xmlns:android="http://schemas.android.com/apk/res/android"
+            android:width="48dp"
+            android:height="48dp"
+            android:viewportWidth="24"
+            android:viewportHeight="24">
+            <path
+                android:fillColor="#FFFFFF"
+                android:pathData="M9,3V12.26C8.59,12.11 8.1,12 7.5,12C5.84,12 4.5,13.34 4.5,15C4.5,16.66 5.84,18 7.5,18C9.16,18 10.5,16.66 10.5,15V6H17V4H9Z" />
+            <path
+                android:fillColor="#FFFFFF"
+                android:pathData="M17,7V15.26C16.59,15.11 16.1,15 15.5,15C13.84,15 12.5,16.34 12.5,18C12.5,19.66 13.84,21 15.5,21C17.16,21 18.5,19.66 18.5,18V7H17Z" />
+        </vector>
+    </item>
+
+</layer-list>

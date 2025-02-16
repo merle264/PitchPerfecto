@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".HardModeActivity">
+
+    <!-- Starry Background View -->
+    <com.example.karaoke.StarryBackgroundView
+        android:id="@+id/starryBackgroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Main Content Layout (Buttons, TextViews, etc.) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="top|start"
+        android:background="@android:color/transparent">
+
+        <!-- Record Button -->
+        <Button
+            android:id="@+id/recordButton"
+            android:layout_width="match_parent"
+            android:background="@color/purple_500"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:text="start"
+            android:textColor="@color/white" />
+
+        <!-- Pause Button -->
+        <Button
+            android:id="@+id/pauseButton"
+            android:layout_width="match_parent"
+            android:background="@color/purple_500"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:text="pause"
+            android:textColor="@color/white" />
+
+        <!-- Button to switch back to Recording mode -->
+        <Button
+            android:id="@+id/btnSwitchMode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/purple_500"
+            android:layout_margin="5dp"
+            android:text="normal"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/lyricsTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Lyrics will appear here"
+            android:textSize="20sp"
+            android:textColor="#FFEBEE"
+            android:gravity="center" />
+
+        <!-- Pitch and Feedback Section -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Label for Pitch -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pitch:"
+                android:textSize="18sp"
+                android:layout_gravity="start"/>
+
+            <!-- Display Detected Pitch -->
+            <TextView
+                android:id="@+id/pitchTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="0"
+                android:textSize="50sp" />
+
+        </FrameLayout>
+
+        <!-- Feedback for the User -->
+        <TextView
+            android:id="@+id/feedbackTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Feedback will appear here"
+            android:textSize="20sp"
+            android:textColor="#FFEBEE"
+            android:gravity="center" />
+
+        <!-- Result for the User -->
+        <TextView
+            android:id="@+id/resultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:textColor="#FFEBEE"
+            android:gravity="center" />
+
+    </LinearLayout>
+</FrameLayout>

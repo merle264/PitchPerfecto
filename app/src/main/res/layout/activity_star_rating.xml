@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <!-- Starry Background View -->
+    <com.example.karaoke.StarryBackgroundView
+        android:id="@+id/starryBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"/>
+
+    <!-- Status TextView to show the similarity result -->
+    <TextView
+        android:id="@+id/starRatingStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score Similarity: 0%"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Star ImageViews to show the stars based on the rating -->
+    <LinearLayout
+        android:id="@+id/starLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/starRatingStatus"
+        android:layout_marginTop="20dp">
+
+        <!-- Star 1 -->
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/star_empty"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Star 2 -->
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/star_empty"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Star 3 -->
+        <ImageView
+            android:id="@+id/star3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/star_empty"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Star 4 -->
+        <ImageView
+            android:id="@+id/star4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/star_empty"
+            android:layout_marginEnd="10dp"/>
+
+        <!-- Star 5 -->
+        <ImageView
+            android:id="@+id/star5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/star_empty"
+            android:layout_marginEnd="10dp"/>
+    </LinearLayout>
+
+    <!-- Button to return to the main screen -->
+    <Button
+        android:id="@+id/btnReturnToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return to Main"
+        android:layout_below="@id/starLayout"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/gradient_star_color"
+        android:layout_marginTop="30dp"/>
+</RelativeLayout>

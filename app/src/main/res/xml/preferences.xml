@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="General Settings">
+        <!-- License Information -->
+        <Preference
+            android:key="license"
+            android:title="Licenses"
+            android:summary="View third-party licenses" />
+            android:onClick="openLicenses" />  <!-- Add this onClick to trigger the method -->
+    </PreferenceCategory>
+</PreferenceScreen>

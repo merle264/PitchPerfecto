@@ -1,0 +1,6 @@
+com\jlibrosa\audio\JLibrosa.class
+com\jlibrosa\audio\exception\FileFormatNotSupportedException.class
+com\jlibrosa\audio\wavFile\WavFile$IOState.class
+com\jlibrosa\audio\wavFile\WavFile.class
+com\jlibrosa\audio\process\AudioFeatureExtraction.class
+com\jlibrosa\audio\wavFile\WavFileException.class
