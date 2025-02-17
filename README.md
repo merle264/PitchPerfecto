@@ -8,6 +8,7 @@ The karaoke app „PitchPerfecto“ is an innovative karaoke app that analyzes t
 # Installation
 In order to install PitchPerfecto on your Android device, you will need to download our latest release with the PitchPerfectot.apk file, which can be found in this repository. Then tap the downloaded .apk file to install the app. The app should now be available on your phone.
 
+
 # Usage
 First use: When you open PitchPerfecto for the first time, the app will ask you to allow the use of the microphone. In order for the app to work as expected, the app must receive the necessary permissions. Now you are ready to choose a song that you would like to sing. 
 ![Startbildschirm](Screenshot_Startbildschirm.jpg)
@@ -20,6 +21,7 @@ Once you have decided which song you want to sing, you can choose which mode you
 The first one you see is the classic mode, where only your pitch is compared to the original pitch of the song. This is for those who want to get started, or for those who just want to enjoy themselves.
 
 ![easymode](Screenshot_leichtermodus.jpeg) 
+![result](Screenshot_Resultat.jpg)
 
 
 
