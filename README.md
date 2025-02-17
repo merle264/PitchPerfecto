@@ -10,6 +10,7 @@ In order to install PitchPerfecto on your Android device, you will need to downl
 
 # Usage
 First use: When you open PitchPerfecto for the first time, the app will ask you to allow the use of the microphone. In order for the app to work as expected, the app must receive the necessary permissions. Now you are ready to choose a song that you would like to sing. 
+![Startbildschirm](Screenshot_Startbildschirm.jpg)
 
 
 
@@ -24,8 +25,9 @@ The first one you see is the classic mode, where only your pitch is compared to 
 
 
 
-The second and final mode is for experts or those who want a bit more of a challenge. Here you get real-time feedback on how you're singing. You'll be able to see what frequency you're singing at, and you'll end up with a final score, and the more perfect you get, the better your final score will be.
 
+The second and final mode is for experts or those who want a bit more of a challenge. Here you get real-time feedback on how you're singing. You'll be able to see what frequency you're singing at, and you'll end up with a final score, and the more perfect you get, the better your final score will be.
+![hardmode](Screenshot_hardmodus.jpg)
 
 # Internal analysis process
 The songs have been separated beforehand and the lyrics are synchronised using lrc files. Now for the classic mode, JLibrosa compares both MFCC (Mel-Frequency Cepstral Coefficients) values. For the hard mode, TarsosDSP allows you to experience real time feedback where your frequency is compared to the original song and you get feedback like "ok", "good", "super" and "perfect" (sorted by score from bad to good). The better you are, the higher your real score will be.
