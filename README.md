@@ -1,25 +1,15 @@
- # anleitung 
 
 
+# PitchPerfecto
+The karaoke app „PitchPerfecto“ is an innovative karaoke app that analyzes the user's singing and provides personalized feedback. Users sing along to a song with the lyrics displayed in real time. After the performance, the app analyzes the singing using machine learning and provides visual feedback. It also includes a simple feedback system and ensures that licensing rights for the music tracks are respected.
  
-
-
-
-
-
-
-
-
-
-
-
 
 
 # Installation
 In order to install PitchPerfecto on your Android device, you will need to download our latest release with the PitchPerfectot.apk file, which can be found in this repository. Then tap the downloaded .apk file to install the app. The app should now be available on your phone.
 
 # Usage
-First use: When you open HFU-BeatBot for the first time, the app will ask you to allow the use of the microphone. In order for the app to work as expected, the app must receive the necessary permissions. Now you are ready to choose a song that you would like to sing. 
+First use: When you open PitchPerfecto for the first time, the app will ask you to allow the use of the microphone. In order for the app to work as expected, the app must receive the necessary permissions. Now you are ready to choose a song that you would like to sing. 
 
 
 
