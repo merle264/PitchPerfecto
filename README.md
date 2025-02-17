@@ -11,7 +11,7 @@ In order to install PitchPerfecto on your Android device, you will need to downl
 
 # Usage
 First use: When you open PitchPerfecto for the first time, the app will ask you to allow the use of the microphone. In order for the app to work as expected, the app must receive the necessary permissions. Now you are ready to choose a song that you would like to sing.
-<img src="Screenshot_Startbildschirm.jpg" alt="Startbildschirm" width="300"> 
+<img src="Screenshot_Startbildschirm.jpg" alt="Startbildschirm" width="300" height="200"> 
 
 
 
@@ -21,8 +21,8 @@ Once you have decided which song you want to sing, you can choose which mode you
 The first one you see is the classic mode, where only your pitch is compared to the original pitch of the song. This is for those who want to get started, or for those who just want to enjoy themselves.
 
 <div style="display: flex; justify-content: space-between;">
-  <img src="Screenshot_leichtermodus.jpeg" alt="easymode" width="300">
-  <img src="Screenshot_Resultat.jpg" alt="result" width="300">
+  <img src="Screenshot_leichtermodus.jpeg" alt="easymode" width="300" height="200">
+  <img src="Screenshot_Resultat.jpg" alt="result" width="300" height="200">
 </div>
 
 
@@ -31,7 +31,7 @@ The first one you see is the classic mode, where only your pitch is compared to 
 
 
 The second and final mode is for experts or those who want a bit more of a challenge. Here you get real-time feedback on how you're singing. You'll be able to see what frequency you're singing at, and you'll end up with a final score, and the more perfect you get, the better your final score will be.
-<img src="Screenshot_hardmodus.jpg" alt="hardmode" width="300">
+<img src="Screenshot_hardmodus.jpg" alt="hardmode" width="300" height="200">
 
 # Internal analysis process
 The songs have been separated beforehand and the lyrics are synchronised using lrc files. Now for the classic mode, JLibrosa compares both MFCC (Mel-Frequency Cepstral Coefficients) values. For the hard mode, TarsosDSP allows you to experience real time feedback where your frequency is compared to the original song and you get feedback like "ok", "good", "super" and "perfect" (sorted by score from bad to good). The better you are, the higher your real score will be.
