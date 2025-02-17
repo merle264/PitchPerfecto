@@ -18,7 +18,7 @@ Once you have decided which song you want to sing, you can choose which mode you
 
 The first one you see is the classic mode, where only your pitch is compared to the original pitch of the song. This is for those who want to get started, or for those who just want to enjoy themselves.
 
-![easymode](Screenshot_leichtermodus.jpeg)
+![easymode](Screenshot_leichtermodus.jpeg) <img src="..." width="300">
 
 
 
