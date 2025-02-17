@@ -33,9 +33,9 @@ Link to License: https://creativecommons.org/licenses/by/4.0/
 
 This project includes the following libraries with their respective licenses:
 
-    GSON, JLayer, and MPAndroidChart - Apache License 2.0
+  1. Apache Commons Math - Apache License 2.0
 
-    JLibrosa - MIT License
+  2. JLibrosa, Android-Wave-Recorder - MIT License
 
-    JLayer - GNU LGPL
+  3. TarsosDSP - GPL-3.0 license
 
