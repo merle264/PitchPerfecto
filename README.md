@@ -31,6 +31,7 @@ The first one you see is the classic mode, where only your pitch is compared to 
 
 
 The second and final mode is for experts or those who want a bit more of a challenge. Here you get real-time feedback on how you're singing. You'll be able to see what frequency you're singing at, and you'll end up with a final score, and the more perfect you get, the better your final score will be.
+
 <img src="Screenshot_hardmodus.jpg" alt="hardmode" width="300">
 
 # Internal analysis process
