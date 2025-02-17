@@ -12,6 +12,7 @@ In order to install PitchPerfecto on your Android device, you will need to downl
 # Usage
 First use: When you open PitchPerfecto for the first time, the app will ask you to allow the use of the microphone. In order for the app to work as expected, the app must receive the necessary permissions. Now you are ready to choose a song that you would like to sing. 
 ![Startbildschirm](Screenshot_Startbildschirm.jpg)
+<img src="Screenshot_Startbildschirm.jpg" alt="Startbildschirm" width="300"> 
 
 
 
