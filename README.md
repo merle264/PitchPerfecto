@@ -4,7 +4,6 @@
 The karaoke app „PitchPerfecto“ is an innovative karaoke app that analyzes the user's singing and provides personalized feedback. Users sing along to a song with the lyrics displayed in real time. After the performance, the app analyzes the singing using machine learning and provides visual feedback. It also includes a simple feedback system and ensures that licensing rights for the music tracks are respected.
  
 
-
 # Installation
 In order to install PitchPerfecto on your Android device, you will need to download our latest release with the PitchPerfectot.apk file, which can be found in this repository. Then tap the downloaded .apk file to install the app. The app should now be available on your phone.
 
@@ -37,8 +36,9 @@ The second and final mode is for experts or those who want a bit more of a chall
 
 <img src="Screenshot_hardmodus.jpg" alt="hardmode" width="300">
 
+
 # Internal analysis process
-The songs have been separated beforehand and the lyrics are synchronised using lrc files. Now for the classic mode, JLibrosa compares both MFCC (Mel-Frequency Cepstral Coefficients) values. For the hard mode, TarsosDSP allows you to experience real time feedback where your frequency is compared to the original song and you get feedback like "ok", "good", "super" and "perfect" (sorted by score from bad to good). The better you are, the higher your real score will be.
+The songs were previously separated using Open-Unmix and the lyrics were synchronised using lrc files. Now for the classic mode, JLibrosa compares both MFCC (Mel-Frequency Cepstral Coefficients) values. For the hard mode, TarsosDSP allows you to experience real time feedback where your frequency is compared to the original song and you get feedback like "ok", "good", "super" and "perfect" (sorted by score from bad to good). The better you are, the higher your real score will be.
 
 
 # credits:
@@ -52,7 +52,7 @@ This project includes the following libraries with their respective licenses:
 
   1. Apache Commons Math - Apache License 2.0
 
-  2. JLibrosa, Android-Wave-Recorder - MIT License
+  2. Android-Wave-Recorder, JLibrosa, Open-Unmix-PyTorch - MIT License
 
   3. TarsosDSP - GPL-3.0 license
 
